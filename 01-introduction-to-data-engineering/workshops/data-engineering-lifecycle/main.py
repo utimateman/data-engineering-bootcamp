@@ -18,7 +18,7 @@ with open("dogs.json", "w") as f:
 api_url = "https://api.jsonbin.io/v3/b"
 headers = {
     "Content-Type": "application/json",
-    "X-Master-Key": "$2a$10$R5NbE/9PLfhYE6WgmRa72..TTXe.bb5OeEAYl5AABm6MS2DVo0T/i",
+    "X-Master-Key": "",
     "X-Collection-Id": "65d05a56dc74654018a5f07b",
 }
 
