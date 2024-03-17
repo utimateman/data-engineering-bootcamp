@@ -183,3 +183,7 @@ pyrightconfig.json
 
 # DEB Workshop
 de-lifecycle
+
+
+*.data-engineer-bootcamp-416105-7b0ce102eddf.json
+*.data-engineer-bootcamp-416105-378e0ec03e71.json

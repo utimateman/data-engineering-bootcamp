@@ -30,3 +30,5 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 See [Setting the right Airflow
 user](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#setting-the-right-airflow-user)
 for more detail.
+
+docker compose up
