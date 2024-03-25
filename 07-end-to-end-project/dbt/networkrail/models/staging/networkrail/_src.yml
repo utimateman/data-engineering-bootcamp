@@ -1,0 +1,75 @@
+version: 2
+
+sources:
+  - name: networkrail
+    schema: networkrail
+    database: data-engineer-bootcamp-416105
+
+    tables:
+      - name: movements
+        description: Network Rail movement data
+        columns:
+          - name: event_type
+            description: Event type
+        freshness:
+          warn_after: {count: 1, period: hour}
+          error_after: {count: 2, period: hour}
+        loaded_at_field: actual_timestamp
+      - name: event_type
+        description: Event type
+      - name: gbtt_timestamp
+        description: The scheduled timestamp (GBTT) in UTC
+      - name: original_loc_stanox
+        description: Original location STANOX
+      - name: planned_timestamp
+        description: The planned timestamp in UTC
+      - name: timetable_variation
+        description: Timetable variation
+      - name: original_loc_timestamp
+        description: Original location timestamp in UTC
+      - name: current_train_id
+        description: Current train ID
+      - name: delay_monitoring_point
+        description: Delay monitoring point
+      - name: next_report_run_time
+        description: Next report run time
+      - name: reporting_stanox
+        description: Reporting STANOX
+      - name: actual_timestamp_utc
+        description: The actual timestamp in UTC
+      - name: correction_ind
+        description: Correction indicator
+      - name: event_source
+        description: Event source
+      - name: train_file_address
+        description: Train file address
+      - name: platform
+        description: Platform
+      - name: division_code
+        description: Division code
+      - name: train_terminated
+        description: Train terminated indicator
+      - name: train_id
+        description: Train ID
+      - name: offroute_ind
+        description: Off route indicator
+      - name: variation_status
+        description: Variation status
+      - name: train_service_code
+        description: Train service code
+      - name: toc_id
+        description: TOC ID
+      - name: loc_stanox
+        description: Location STANOX
+      - name: auto_expected
+        description: Auto expected
+      - name: direction_ind
+        description: Direction indicator
+      - name: route
+        description: Route
+      - name: planned_event_type
+        description: Planned event type
+      - name: next_report_stanox
+        description: Next report STANOX
+      - name: line_ind
+        description: Line indicator

@@ -1,0 +1,22 @@
+networkrail:
+
+  outputs:
+    dbt_krai_bigquery:
+      type: bigquery
+      method: service-account
+      project: data-engineer-bootcamp-416105
+      dataset: dbt_krai
+      threads: 1
+      keyfile: /workspaces/data-engineering-bootcamp/07-end-to-end-project/dags/data-engineer-bootcamp-416105-b26ee1807d97.json
+      location: asia-southeast1
+
+    prod_bigquery:
+      type: bigquery
+      method: service-account
+      project: data-engineer-bootcamp-416105
+      dataset: networkrail
+      threads: 1
+      keyfile: /workspaces/data-engineering-bootcamp/07-end-to-end-project/dags/data-engineer-bootcamp-416105-b26ee1807d97.json
+      location: asia-southeast1
+
+  target: dbt_krai_bigquery
